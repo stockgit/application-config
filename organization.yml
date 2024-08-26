@@ -1,0 +1,18 @@
+
+server:
+  port: 8083
+  
+spring:
+  application:
+    name: organization-service
+  sleuth:
+    sampler:
+      probability: 1.0
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/organization
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka

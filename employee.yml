@@ -1,6 +1,3 @@
-spring.application.name=employee-service
-spring.data.mongodb.uri=mongodb://localhost:27017/employee
-
 server:
   port: 8085
 
@@ -10,7 +7,6 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
-spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017/employee

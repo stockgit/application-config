@@ -1,0 +1,17 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: employee-service
+  sleuth:
+    sampler:
+      probability: 1.0
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/employee
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+

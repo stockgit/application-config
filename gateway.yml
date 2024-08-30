@@ -14,9 +14,11 @@ spring:
 zuul:
   prefix: /api
   ignoredServices: '*'
+  #####
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Access-Control-Expose-Headers, Access-Control-Allow-Methods
   ignore-security-headers: true
   default-filters: TokenRelay
+  #####
   routes:
     employee-service:
       path: /employees/**
